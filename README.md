@@ -42,6 +42,7 @@ docker compose up
 ```
 
 <p>Response</p>
+
 ```
 {
     "username": "John",
