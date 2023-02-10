@@ -65,6 +65,7 @@ docker compose up
 ```
 
 <p>Response</p>
+
 ```
 {
     "_id": "63e658ce51a9bd1f5b48e4ba",
@@ -80,6 +81,7 @@ docker compose up
 `http://localhost:3000/users/leaderboard?page=1&perPage=10`
 
 <p>Response</p>
+
 ```
 [
     {
