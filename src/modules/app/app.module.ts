@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { RedisModule } from '../redis/redis.module';
+import { UsersModule } from '../users/users.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -15,6 +16,7 @@ import { AppService } from './app.service';
       host: process.env.REDIS_HOST,
       port: +process.env.REDIS_PORT,
     }),
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
